@@ -7,11 +7,11 @@ import Home from './components/Home/Home'
 import About from './components/About/About'
 import Portfolio from './components/Portfolio/Portfolio'
 import Contact from './components/Contact/Contact'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import Notfound from './components/Notfound/Notfound';
 
-let x= createBrowserRouter ([
+let x= createHashRouter ([
  {path:'',element:<Layout/>,children:[
   {index:true,element:<Home/>},
   {path:'about',element:<About/>},
